@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCollectionViewCell" customModule="TaskForRedSo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S6c-i7-xh7">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q7n-pF-Qsa">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q7n-pF-Qsa" firstAttribute="leading" secondItem="S6c-i7-xh7" secondAttribute="leading" id="EZc-mh-oI9"/>
+                            <constraint firstAttribute="trailing" secondItem="q7n-pF-Qsa" secondAttribute="trailing" id="XD2-vg-hn1"/>
+                            <constraint firstAttribute="bottom" secondItem="q7n-pF-Qsa" secondAttribute="bottom" id="eje-yu-5H7"/>
+                            <constraint firstItem="q7n-pF-Qsa" firstAttribute="top" secondItem="S6c-i7-xh7" secondAttribute="top" id="pKb-CT-nbA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jBO-ME-ng7"/>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="S6c-i7-xh7" secondAttribute="trailing" id="7gx-yE-geA"/>
+                <constraint firstAttribute="bottom" secondItem="S6c-i7-xh7" secondAttribute="bottom" id="XOY-GA-6iZ"/>
+                <constraint firstItem="S6c-i7-xh7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cT3-Re-coA"/>
+                <constraint firstItem="S6c-i7-xh7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="d0p-s7-rdJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imageView" destination="q7n-pF-Qsa" id="JcQ-Gk-L9Q"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
